@@ -1,3 +1,5 @@
+// UI texts. Should be moved to I18n in future
+
 const UNLOCKING = "Unlocking...";
 const FETCHING_LOCKS = "Fetching locks...";
 const NO_LOCKS_TO_DISPLAY = "No locks to display";

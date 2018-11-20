@@ -1,3 +1,5 @@
+// Redux store with saga middleware and logger
+
 import { createStore, applyMiddleware } from "redux";
 import rootReducer from "./index";
 import createSagaMiddleware from "redux-saga";

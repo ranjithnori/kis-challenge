@@ -1,3 +1,5 @@
+// Individual lock component
+
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
@@ -15,15 +17,8 @@ const styles = {
     display: "flex",
     marginBottom: "1.5rem"
   },
-  bullet: {
-    margin: "0 2px",
-    transform: "scale(0.8)"
-  },
   title: {
     fontSize: 14
-  },
-  pos: {
-    marginBottom: 12
   }
 };
 

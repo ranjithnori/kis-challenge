@@ -24,6 +24,7 @@ export const INITIAL_STATE = {
   getUserLocksAPIStatus: APIConstants.API_INITIAL
 };
 
+// Get user locks
 export const getUserLocksRequest = (state = INITIAL_STATE) => {
   return {
     ...state,
@@ -31,8 +32,10 @@ export const getUserLocksRequest = (state = INITIAL_STATE) => {
   };
 };
 
-// the eagle has landed
 export const getUserLocksSuccess = (state = INITIAL_STATE, { payload }) => {
+  // Normalized for easier state updates.
+  // Also, keys are stored to ensure the order is maintained while displaying.
+
   const { normalizedObject, keys } = normalizeArrayToObject(
     payload.data,
     LockAPIConstants.ID_KEY,
@@ -49,7 +52,6 @@ export const getUserLocksSuccess = (state = INITIAL_STATE, { payload }) => {
   };
 };
 
-// uh oh
 export const getUserLocksFailure = (state = INITIAL_STATE) => {
   return {
     ...state,
@@ -57,6 +59,7 @@ export const getUserLocksFailure = (state = INITIAL_STATE) => {
   };
 };
 
+// Unlock
 export const unlockRequest = (state = INITIAL_STATE, { payload }) => {
   return {
     ...state,
@@ -70,7 +73,6 @@ export const unlockRequest = (state = INITIAL_STATE, { payload }) => {
   };
 };
 
-// the eagle has landed
 export const unlockSuccess = (state = INITIAL_STATE, { payload }) => {
   return {
     ...state,
@@ -84,7 +86,6 @@ export const unlockSuccess = (state = INITIAL_STATE, { payload }) => {
   };
 };
 
-// uh oh
 export const unlockFailure = (state = INITIAL_STATE, { payload }) => {
   return {
     ...state,

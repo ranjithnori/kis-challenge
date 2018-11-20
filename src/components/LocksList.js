@@ -1,3 +1,5 @@
+// List of lock components
+
 import React, { Component } from "react";
 import kisi from "kisi-client";
 import { connect } from "react-redux";

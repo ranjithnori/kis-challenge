@@ -1,3 +1,5 @@
+// All API end points
+
 const GET_LOCKS = "locks";
 const getUnlockURL = id => `locks/${id}/unlock`;
 

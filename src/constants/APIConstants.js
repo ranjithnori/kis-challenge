@@ -1,3 +1,5 @@
+// All general purpose API constants should be added here
+
 const API_INITIAL = 0;
 const API_FETCHING = 100;
 const API_PAGINATION_FINISHED = 300;

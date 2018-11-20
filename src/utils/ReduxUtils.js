@@ -1,3 +1,4 @@
+// Utility function for normalization
 const normalizeArrayToObject = (array = [], key = "", objectToAppend = {}) => {
   let normalizedObject = {};
   let keys = array.map(item => {
